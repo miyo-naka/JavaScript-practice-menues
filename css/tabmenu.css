@@ -1,0 +1,50 @@
+/* ------------- header ------------- */
+header {
+  margin-top: 0;
+  height: 70px;
+  line-height: 70px;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+/* ------------- main ------------- */
+.tab {
+  width: 60%;
+  margin: 50px;
+}
+
+.tab-menu {
+  display: flex;
+}
+.tab-menu__item {
+  width: 100px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  list-style: none;
+  border: dotted 1px cornflowerblue;
+  border-bottom: none;
+}
+.tab-menu__item.active {
+  background: cornflowerblue;
+  color: white;
+  font-weight: bold;
+}
+
+.tab-content {
+  height: 200px;
+  border: dotted 1px cornflowerblue;
+  background-color: rgb(236, 255, 255);
+}
+.tab-content__item {
+  display: none;
+  font-size: 16px;
+  padding: 10px;
+}
+.tab-content__item.show {
+  display: block;
+}

@@ -1,0 +1,53 @@
+/* ------------- header ------------- */
+header {
+  margin-top: 0;
+  height: 70px;
+  line-height: 70px;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+/* ------------- main ------------- */
+.menu {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  line-height: 40px;
+  margin: 20px auto;
+}
+
+.menu li {
+  width: 25%;
+  text-align: center;
+}
+
+.menu li p {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background-color: cornflowerblue;
+}
+.menu li:hover p {
+  color: red;
+}
+
+.submenu {
+  height: 0;
+  opacity: 0;
+  transition-duration: 0.5s;
+  width: 100%;
+}
+.submenu li {
+  width: 100%;
+  background-color: rgb(225, 255, 255);
+}
+
+.submenu.is-open {
+  display: block;
+  height: auto;
+  opacity: 1;
+}

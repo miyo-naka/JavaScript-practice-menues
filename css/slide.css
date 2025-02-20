@@ -1,0 +1,113 @@
+/* * {
+  border: dotted salmon 1px;
+} */
+
+/* ------------- header ------------- */
+header {
+  margin-top: 0;
+  height: 70px;
+  line-height: 70px;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+/* ------------- main ------------- */
+.slide-wrapper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden; /* はみ出したスライドを隠す */
+}
+
+/* ↓ 左右のボタン */
+.prev {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 25px;
+  bottom: 50%;
+  z-index: 10;
+  cursor: pointer;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(-135deg) translateX(-50%);
+}
+
+.next {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  z-index: 10;
+  cursor: pointer;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  -webkit-transform: rotate(45deg) translateY(50%);
+  transform: rotate(45deg) translateY(50%);
+}
+
+.indicator {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  column-gap: 18px;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  list-style: none;
+  background-color: #fff;
+  border: 2px #000 solid;
+  cursor: pointer;
+}
+.indicator li:first-of-type {
+  background-color: #000;
+}
+
+.slide {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: all 0.3s;
+}
+.slide div {
+  width: 33.33%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.slide div:nth-of-type(1) {
+  background-color: #e1f3fc;
+}
+.slide div:nth-of-type(2) {
+  background-color: #fce8f0;
+}
+.slide div:nth-of-type(3) {
+  background-color: #e3f1e4;
+}
+
+/* ↓スライドさせるために必要なクラス */
+.slide1 {
+  transform: translateX(0);
+}
+.slide2 {
+  transform: translateX(-33.33%);
+}
+.slide3 {
+  transform: translateX(-66.66%);
+}

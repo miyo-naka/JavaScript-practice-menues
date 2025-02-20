@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/dayjs"></script>
+    <script src="https://unpkg.com/dayjs@1.7.7/locale/ja.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <title>Modal Window</title>
+  </head>
+  <body>
+    <header>
+      <h1>モーダルウィンド</h1>
+    </header>
+
+    <button class="modal-open">モーダルを開く</button>
+
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-close">✖</div>
+        <div class="modal-content">
+          <h2>モーダルウィンド</h2>
+          <ul>
+            <li>1：これはモーダルウインドです</li>
+            <li>2：✖ボタンで閉じることができます</li>
+            <li>
+              3：モーダルウィンドの外のグレーの部分をクリックしても閉じることができます
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+  </body>
+</html>

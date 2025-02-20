@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://unpkg.com/dayjs"></script>
+      <script src="https://unpkg.com/dayjs@1.7.7/locale/ja.js"></script>
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/slide.css" />
+      <title>Slide show</title>
+    </head>
+  </head>
+  <body>
+    <header>
+      <h1>スライドショー(スライダー、カルーセル)</h1>
+    </header>
+    <main>
+      <div class="slide-wrapper">
+        <div id="slide" class="slide">
+          <div>
+            <p>スライド１</p>
+          </div>
+          <div>
+            <p>スライド２</p>
+          </div>
+          <div>
+            <p>スライド３</p>
+          </div>
+        </div>
+        <span id="prev" class="prev"></span>
+        <span id="next" class="next"></span>
+        <ul id="indicator" class="indicator">
+          <li class="list"></li>
+          <li class="list"></li>
+          <li class="list"></li>
+        </ul>
+      </div>
+    </main>
+    <script src="js/slide.js"></script>
+  </body>
+</html>
